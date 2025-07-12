@@ -1,0 +1,7 @@
+# robots.txt gerado por bluelinks.com.br
+User-agent: googlebot-mobile
+Disallow: 
+User-agent: *
+Disallow: /
+Disallow: ./portfolio/
+Sitemap: hitalu.com

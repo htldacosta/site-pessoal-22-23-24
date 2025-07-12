@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-form.css">
+    <link rel="stylesheet" href="./css/stars.css">
+    <meta name="author" content="hilalu">
+    <link rel="canonical" href="https://www.hitaludev.com.br">
+    <meta name="description" content="crio landing page e sites intitucional responsivo com html css e javasxript">
+    <meta name="keywords" content="seo, responsivo, html, site, javascript, css, landing, page">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="./img/logo1.ico" type="image/png">
+    <title>Hitalu - formulário</title>
+    <script src="./js/app.js" defer ></script>
+</head>
+
+<body>
+    <header class="head-body">
+        <div class="container1 container">
+            <div class="space space-1"></div>
+            <div class="space space-2"></div>
+            <div class="space space-3"></div> 
+
+            <!-- </div> -->
+            <div class="head-flex">
+                <div class="logo">
+                    <img src="./img/logo1.png" alt="logo globo">
+                        <h1><span>h</span>italu</h1>
+                </div><!--logo-->
+                
+                <nav class="menu-desktop" id="menu-desktop">
+                    
+                </nav>
+
+                <div class="btn-what"><a href="./index.html">voltar</a></div>
+            
+            </div><!--head-flex-->
+        </div><!--container-->
+    </header><!--head-body-->
+
+    <section class="sec-banner">
+           
+        <div class="container2">
+                  
+            <div class="left-banner left-banner-form">
+                <h2><span>F</span>ormulário:</h2> 
+                 <form id="form" action="https://api.staticforms.xyz/submit" method="post"> <!--action="https://formsubmit.co/hitaludacosta@Gmail.com"  -->
+                    <input type="hidden" name="accessKey" value="287a8b78-408d-4dd9-afd0-7a36fb6f8e3e"> <!-- Required -->
+                    <div>
+                        <input type="text" name="name" id="nome" class="inputs required" placeholder="digite seu nome..." oninput="nameValidate()" required><br>
+                        <span class="span-required">o nome deve ter 3 caracteres</span>
+                    </div>
+
+                    <div>
+                       <input type="email" name="email" id="email" class="inputs required" placeholder="digite seu E-mail..." oninput="emailValidate()" required> <br>
+                       <span class="span-required">digite um E-mail válido!</span>
+                    </div>
+
+                    <div>
+                       <textarea class="inputs" placeholder="escreva uma menssagem..." name="message" id="assuntotextarea" cols="30" rows="10" required></textarea> <br>
+                       
+                    </div>
+                    
+                    <div>
+                       <button formmethod="post" id="btn" type="submit" >enviar</button>
+                    </div>
+                   
+                    <input type="hidden" name="redirectTo" value="https://hitalu.com/obrigado.html"> <!-- Optional -->
+                </form>
+            </div>              
+                    
+                        
+                  
+        
+            <div class="right-banner">
+                <div class="astro-img"></div>
+                <div class="credito-set"><a target="_blank" href="https://storyset.com/people" aria-label="link de crédito">People illustrations by Storyset</a></div>
+            </div>
+        </div><!--container2-->
+    </section><!--sec-banner-->
+
+   
+    <!--          
+            </div>portfolio-flex
+        </div>container2
+    </section> -->
+
+    <div class="line1"></div>
+
+    <div class="container1">
+        <div class="whatSapp-icon"> 
+            <a href="https://wa.me/5569993002747" target="_blank" aria-label="botão para contato via whatsapp">
+                <i class="fa fa-whatsapp"></i> 
+            </a>
+        </div>
+    </div> 
+    
+   
+
+    <footer>
+        <div class="container1">
+            <div class="foot-flex">
+                <div class="rede-social">
+                    <h2>redes sociais:</h2>
+                    <div class="icon-social">
+                        <a href="https://www.instagram.com/hitaludacosta/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <!-- <a href="#"><i class="fa fa-facebook"></i></a> -->
+                        <a href="https://www.linkedin.com/in/hitalu-da-costa-5109a828b/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </div>                
+                </div>
+                <div class="creditos">
+                    <h2>créditos:</h2>
+                    <a href="https://fontawesome.com/" target="_blank" aria-label="créditos para fontAwesome"><i class="fa fa-font-awesome"></i></a>
+                </div>
+                <div class="foot-p">
+                    <p>todos os direitos reservados* 2023</p>
+                </div>
+            </div><!--foot-flex-->
+        </div><!--container-->
+    </footer>
+    
+    <noscript>
+        
+        <p>verifique se o javascript está desabilitado no seu navegador</p>
+    </noscript>
+    <script src="./js/stars.js"></script>
+</body>
+
+</html>

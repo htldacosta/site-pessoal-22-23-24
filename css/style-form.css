@@ -1,0 +1,124 @@
+div.left-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+}
+
+#input-key {
+    display: none;
+}
+
+.left-banner h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+form {
+    width: 100%;
+    height: 100vh;
+    box-shadow: 1px 5px 3px 3px rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+
+.span-required {
+    display: none;
+    color: red;
+    margin-top: 1px;
+    text-wrap: wrap;
+}
+
+.inputs {
+    padding: 8px 5px;
+    outline: none;
+    border-radius: 5px;
+    background-color: #2e2e2c;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    box-sizing: border-box;
+    width: 40vw;
+    resize: none;
+}
+
+#btn {
+    padding: 8px 5px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: white;
+    box-sizing: border-box;
+    width: 40vw;
+    background-color: #09d947;
+    margin-bottom: 0.5rem;
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#btn:hover { 
+   opacity: 1;
+}
+
+
+@media screen and (max-width: 650px) {
+    
+    header.head-body{
+        max-height: 80px;
+    }
+
+    section.sec-banner {
+        height: 90vh;
+    }
+    
+    div.head-flex{
+        margin-top:2px;
+    }
+
+   div.left-banner {
+        width: 100%;
+        height: 8000px;
+        margin-top: 80px;
+
+    }
+
+    form {
+        width: 90%;
+        height: 100vh;
+        
+        gap: .6rem;
+    }
+
+    .left-banner h2 {
+        text-align: center;
+        color: white;
+        text-shadow: 3px 2px 2px black;
+        margin-bottom: 0.8rem;
+        margin-top: 0.8rem;
+    }
+
+    #btn, .inputs {
+        width: 80vw;
+        
+    }
+    #btn { 
+        opacity: 1;
+     }
+
+     div.right-banner{   
+        display: none;
+    }
+    
+}

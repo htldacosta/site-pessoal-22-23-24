@@ -1,0 +1,1042 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Roboto+Condensed:wght@700&family=Roboto+Mono:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Mono:wght@100;200&display=swap');
+
+:root{
+    --color-main: #2e2e2c;
+    --color-white: #ebebeb;
+    --color-green: #09d947;
+    --color-black: #000;
+    
+
+}
+
+
+
+
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1s;
+    transform: translateX(-100%);
+}
+
+.show {
+    transition: all 1s;
+    transform: translateX(0);
+    filter: blur(0);
+    opacity: 1;
+}
+
+.head-fixed {
+    position: fixed !important;
+    background-color: var(--color-black) !important; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    /* min-height: 100vh; */
+    background-image: linear-gradient(#051327, #000);
+    scroll-behavior: smooth;
+    
+}
+
+#btn-mobile {
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+div.line1{
+    width: 100%;
+    max-width: 1300px;
+    margin: 15px auto;  
+    border: 2px solid var(--color-green);
+}
+
+.container1{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.container2{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+} 
+ 
+
+ 
+
+span{
+	color: var(--color-green);
+    text-transform: uppercase;
+}
+
+/*  */
+
+.whatSapp-icon{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99999;
+    width: 100px;
+    height: 100px;
+    text-shadow: 9px 9px var(--color-black);
+}
+
+.whatSapp-icon a{
+    color: var(--color-white);
+    cursor: pointer;
+    
+}
+
+i.fa-whatsapp{
+    font-size:5rem;
+    transition:all 1s ease-in-out;
+
+}
+
+i.fa-whatsapp:hover{
+    text-shadow: none;
+    color: var(--color-green);
+}
+
+header.head-body{
+    width: 100%;
+    max-height: 80px;
+    height: 100vh;
+}
+
+div.head-flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+div.logo{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.logo{
+    display: flex;
+    align-items: center;
+}
+
+div.logo h1{
+    color: var(--color-white);
+}
+
+div.logo img{
+    width: 50px;
+    height: auto;
+}
+
+nav.menu-desktop{
+    display: flex;
+    align-items: center;
+}
+
+nav.menu-desktop ul#menu{
+    display: flex;
+    gap: 2rem;
+}
+
+nav.menu-desktop ul#menu li a{
+   color: var(--color-white);
+   font-size: 1.4rem;
+   font-weight: 600;
+   transition:all 1s ease-in-out;
+}
+
+nav.menu-desktop ul#menu li a:hover{
+    color: var(--color-green);
+}
+
+
+div.btn-what a{
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 10px;
+    transition:all 1s ease-in-out;
+}
+
+div.btn-what a:hover{
+    color: var(--color-green);
+    
+}
+
+/*aqui termina a section header*/
+
+
+
+
+/* aqui começa o meu banner*/
+
+section.sec-banner{
+    width: 100%;
+    height: 90vh;
+    
+}
+
+.sec-banner > .container2{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+div.left-banner{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.left-banner > .line-box{
+    width: 70%;
+    height: 70%;
+    max-width: 350px;
+    max-height: 400px;
+    border: 3px solid var(--color-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--color-main); */
+    opacity: 7;
+}
+
+div.left-banner > .line-box > .text-box{
+    width: 80%;
+    max-width: 350px;
+    height: 80%;
+    min-width: 300px;
+    background-color: var(--color-black);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20px;
+    border: 3px solid var(--color-green);
+    font-family: 'Roboto Condensed', sans-serif;
+    box-shadow: 5px 2.5px 2.5px 5px black;
+}
+
+/* div.left-banner > .line-box > .text-box > h2{
+    color: var(--color-white);
+    font-weight: 900;
+} */
+
+div.left-banner > .line-box > .text-box > .p-list p{
+    font-size: 18px;
+    font-weight:600;
+    color: var(--color-white);
+    
+}
+
+/* .p-icon-check{
+    display: flex;
+    align-items: center;
+} */
+
+/* div.icon-check{
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/check.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
+
+div.p-principal {
+    font-style: sans-serif;
+    color: #09d947;
+    text-transform: lowercase;
+    font-weight: 500;
+    text-align: left;
+    
+}
+
+div.left-banner > .line-box > .text-box a{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    color: var(--color-black);
+    background-color: var(--color-green);
+    border-radius: 7px;
+    border: none;
+    transition:all 1s ease-in-out;
+    
+}
+
+div.left-banner > .line-box > .text-box a:hover{
+    color: var(--color-white);
+    background-color: var(--color-main);
+}
+
+div.right-banner{
+    width: 50%;
+    height: 100%;
+    z-index: 9999;  
+}
+
+div.astro-img{
+    width: 100%;
+    min-width: 300px;
+    height: 95%;
+    background-image: url('../img/astro.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 9999;
+    
+}
+
+div.credito-set{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+div.credito-set a{
+    color: var(--color-green);
+    text-align: center;
+    opacity: 0.5;
+  
+}
+/* aqui termina o meu banner
+
+--------------------------------------
+--------------------------------------
+--------------------------------------
+--------------------------------------
+
+aqui começa meu sec-portfolio*/
+
+
+section.sec-portfolio {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+div.h2-portfolio {
+    text-align: center;
+    margin: 10px 0;
+}
+
+div.portfolio-flex{
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.swiper {
+    width: 360px;
+    height: 480px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    border: 2px solid var(--color-green);
+    cursor: grab;
+  }
+
+ 
+
+  .swiper-slide:nth-child(1n) {
+    background-image: url(../img/clinica.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .swiper-slide:nth-child(2n) {
+    background-image: url(../img/loja.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .swiper-slide:nth-child(3n) {
+    background-image: url(../img/cabral.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+  }
+
+  .swiper-slide:nth-child(4n) {
+    background-image: url(../img/yoga.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .swiper-slide:nth-child(5n) {
+    background-image: url(../img/escola.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .swiper-slide:nth-child(6n) {
+    background-image: url(../img/pizzaria.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+
+  /* .swiper-slide:nth-child(8n) {
+    background-color: rgb(0, 68, 255);
+  }
+
+  .swiper-slide:nth-child(9n) {
+    background-color: rgb(218, 12, 218);
+  }
+
+  .swiper-slide:nth-child(10n) {
+    background-color: rgb(54, 94, 77);
+  } */
+
+  /* @media (max-width: 760px) {
+    .swiper {
+        width: 100%;
+        height: 100vh;
+      }
+    .swiper-button-next {
+      right: 20px;
+      transform: rotate(90deg);
+    }
+
+    .swiper-button-prev {
+      left: 20px;
+      transform: rotate(90deg);
+    }
+  }
+    */
+  
+  /* This is from w3schools */
+  /* 
+  https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .gallery-wrapper::-webkit-scrollbar {
+    display: none;
+  }  
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .gallery-wrapper {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  } 
+
+ .gallery img {
+    border: 2px solid var(--color-main);
+    border-radius: 10px;
+    transition: all 400ms ease-in-out;
+}
+
+.gallery img:hover {
+    border: 2px solid var(--color-green);
+}   
+
+/*aqui termina meu sec-portfolio*/
+
+/* aqui começa minha section serviços --- */
+
+section.servicos{
+    width: 100%;
+    height: 100vh;
+}
+
+.servico-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  
+}
+
+.titulo{
+    width: 100%;
+    height: 8vh;
+    text-align: center;
+}
+
+.titulo h2{
+    color: var(--color-white);;
+}
+
+.box-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box{
+    width: 90%;
+    max-width: 1300px;
+    height: 30vh;
+    text-align: center;
+    padding: 10px;
+    margin-top: 2px;
+    background-color: var(--color-main);
+}
+
+.box h3{
+    color: var(--color-white);
+    font-size: 19px;
+}
+
+.box p{
+    color: var(--color-white);
+    font-size: 16px;
+    padding: 14px;
+    font-weight: 550;
+    letter-spacing: 1px;
+}
+
+/* aqui termina meu section serviços =-----*/
+
+/* aqui começa meu section sobre*/
+
+section.sobre{
+    width: 100%;
+    height: 80vh;
+    /* gap: 1.2rem; */
+}
+
+div.titulo-sobre{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.titulo-sobre h2{
+    padding: 10px;
+}
+
+div.sobre-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.img-sobre{
+    width: 25%;
+    min-width: 280px;
+    height: 70vh;
+    max-height:300px;
+    background-image: url('../img/hitalu.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20%;
+    /* border: 2px solid var(--color-green); */
+    box-shadow: 10px 10px var(--color-black);
+}
+
+div.sobre-mim{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+div.sobre-mim h2{
+    color: var(--color-green);
+}
+
+div.sobre-mim p{
+    margin-top: 15px;
+    color: var(--color-white);
+    /* color: var(--color-white); */
+    font-size: 1rem;
+    text-align: center;
+    padding: 8px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
+
+div.icon-sobre{
+    margin-top: 200px;
+}
+
+div.icon-sobre i.fa{
+    padding: 6px;
+    color: var(--color-white);
+    font-size: 30px;
+    transition:all 1s ease-in-out;
+}
+
+div.icon-sobre i.fa:hover{
+    color: var(--color-green);
+}
+
+div.cat {
+    width: 50%;
+    min-width: 145x;
+    height: 16vh;
+    background-image: url('../img/cat-rodando.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+    position: fixed;
+    bottom: -100px;
+    right: 100px;
+}
+
+/*aqui começa meu footer*/
+
+
+div.foot-flex{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.rede-social,
+.creditos,
+.foot-p{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.rede-social{
+    width: 33.3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rede-social h2{
+    color: var(--color-green);
+}
+
+.icon-social a i.fa{
+    font-size: 1.6rem;
+    padding: 5px;
+    color: var(--color-white);
+    transition:all 1s ease-in-out;
+}
+
+.icon-social a i.fa:hover,
+i.fa-font-awesome:hover{
+    color: var(--color-green);
+}
+
+
+.creditos{
+    width: 33.3%;
+}
+
+.creditos h2{
+    color: var(--color-green);
+}
+
+i.fa-font-awesome{
+    font-size: 1.6rem;
+    padding: 5px;
+    color: var(--color-white);
+}
+
+.foot-p{   
+    width: 33.3%;
+}
+
+/*aqui termina meu footer*/
+
+
+
+/***---  aqui começa a media queries--****/
+
+
+
+
+@media screen and (min-width: 2100px){
+    
+    section.sec-banner{
+        width: 100%;
+        height: 80vh;
+        max-height: 800px;    
+    }
+
+   
+    div.portfolio-flex{
+        width: 100%;
+        height: 700px;
+       
+    }
+    
+    .box{
+        width: 90%;
+        max-width: 1300px;
+        height: 30vh;
+        max-height: 200px;
+    }
+    
+  
+    
+    .box p{
+        color: var(--color-white);
+        font-size: 19px;
+        padding: 14px;
+        font-weight: 750;
+        letter-spacing: 1.8px;
+    }
+
+    section.servicos{
+        width: 100%;
+        height: 70vh;
+        max-height: 800px;
+    }
+    
+    .servico-flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      
+    
+      
+    }
+
+    section.sobre{
+        width: 100%;
+        height: 80vh;
+        max-height: 600px;
+        /* gap: 1.2rem; */
+    }
+    
+    div.titulo-sobre{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+}
+
+@media screen and (max-width: 1080px){
+    div.head-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav.menu-desktop{
+        display: none;
+    }
+    
+    section.sec-banner {
+        height: 40vh;
+    }
+
+    section.sec-portfolio{
+        height: 80vh;
+        margin-top: 100px;
+        margin-bottom: 60px;
+    
+    }
+
+    div.portfolio-flex {
+        height: 60vh;
+    }
+
+    section.servicos {
+        height: 75vh;
+    }
+
+    div.box {
+        height: 25vh;
+        max-height: 200px;
+        margin-top: 5px;
+    }
+
+    section.sobre {
+        height: 40vh;
+    } 
+
+
+    div.sobre-flex {
+        gap: 1.2rem;
+    }
+    
+
+    div.img-sobre{
+        width: 35%;
+        min-width: 200px;
+        height: 70vh;
+        max-height:200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        border: 2px solid var(--color-green);
+        
+    } 
+
+    
+}
+
+@media screen and (max-width: 764px){ 
+    /* #btn-mobile {
+        display: block;
+        position: absolute;
+        right: 0;
+     }  */
+    
+    /* aqui começa section portifólio */
+    
+    div.slider {
+        background-image: var(--img-1-clinicamobile);
+        background-size: auto;
+        
+      } 
+    
+    div.box{
+        width: 100%;
+     
+    }
+    
+    
+    div.box h3{ 
+        font-size: 20px;
+    }
+    
+    div.box p{
+        font-size: .9rem;
+
+        
+    }
+
+    /* sobre*/
+
+    section.sobre{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* div.sobre-flex {
+        width: 100%;
+        height: 100vh;
+    } */
+    
+    
+    div.sobre-wrapper{ 
+        flex-direction: column;
+    }
+    
+    div.sobre-mim{
+        margin-top: 10px;
+    }   
+
+    div.sobre-mim p {
+        
+        
+    }
+
+}
+
+@media screen and (max-width: 650px){
+    
+    /* section.sec-portfolio {
+        background-color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    } */
+
+
+    div.logo img{
+        display: none;
+    }
+
+    section.sec-banner{
+        width: 100%;
+        height: 80vh;
+        
+    }
+    
+    div.left-banner{
+        width: 100%;
+        height: 60vh;
+        max-height: 260px;
+    }
+    
+    div.left-banner > .line-box{
+        border: none;
+    }
+    
+    div.left-banner > .line-box > .text-box{
+        width: 100%;
+        height: 50vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 99999;
+        background-color: rgba(0, 0, 0, .5);
+        transform: translate(-50%, -50%);
+        
+    }
+    
+   
+    div.right-banner{
+        width: 50%;
+        height: 100%;
+        z-index: 99;   
+    }
+    
+    div.astro-img{
+        width: 100%;
+        min-width: 150px;
+        height: 95%;
+        
+    }
+  
+    section.sec-portfolio{
+        height: 95vh;
+    
+    }
+     
+    div.portfolio-flex{
+        height: 90vh;
+    } 
+
+    section.servicos {
+        height: 90vh;
+    }
+
+    div.box {
+        height: 25vh;
+        max-height: 200px;
+        margin-top: 5px;
+    }
+
+
+    div.credito-set{
+        width: 100%;
+        height: 5%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    div.credito-set a{
+        color: var(--color-green);
+        text-align: center;
+        opacity: 0.1;
+        font-size: small;
+    }
+    
+  
+    .swiper {
+        width: 90vw;
+        height: 80vh;
+    } 
+
+    .swiper-slide {
+        background-size: auto;
+      }
+
+
+    section.sobre {
+        height: 100vh;
+    }
+    
+    .whatSapp-icon{
+        position: fixed;
+        bottom: 50px;
+        right: 40px;
+        width: 30px;
+        height: 30px;
+    }
+     
+    div.foot-flex{
+        display: flex;
+        flex-direction: column;
+        height: 25vh;
+    }
+
+    i.fa-whatsapp{
+        font-size:4rem;
+    
+    }
+    .rede-social,
+    .creditos,
+    .foot-p{
+        margin: 10px;
+
+    }
+
+    .rede-social{
+        width: 100%;
+        
+    }
+
+    .creditos{
+        width: 100%;
+    }
+
+    .foot-p{
+        
+        width: 100%;
+    }
+
+}
+

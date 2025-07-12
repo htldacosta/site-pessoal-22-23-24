@@ -1,0 +1,31 @@
+.container {
+    /* background-image: linear-gradient(#051327, #000); */
+    inset: 0;
+    position: relative;
+  }
+  
+.space {
+    --size: .7px;
+    --space-layer: 
+      2vw 5vh 0 #fff,
+      6vw 8vh 0 #fff,
+      3vw 4vh 0 #fff;
+    
+    width: var(--size);
+    height: var(--size);
+    background: white;
+    box-shadow: var(--space-layer);
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+  }
+  
+.space {
+     animation: move var(--duration) linear infinite;
+  }
+  
+@keyframes move {
+    from { transform: translateY(0); }
+    to { transform: translateY(-300vh); }
+  }

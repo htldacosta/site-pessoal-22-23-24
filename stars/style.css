@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: black;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 300vh;
+    
+}
+
+
+.bolhas {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+
+}
+
+.bolhas span.animar1 {
+    width: 1px;
+    height: 1px;
+    background: #fff;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #c2c2c2,
+    0 0 1px #c2c2c2,
+    0 0 1px #c2c2c2;
+    /* ... outros estilos ... */
+    animation: animar  both infinite;
+    animation-duration: calc(100s / var(--i));
+    /* animation-fill-mode: none; */
+    
+}
+
+.animar2 {
+    animation-duration: calc(20000s / var(--i)) !important;
+    animation-play-state: running;
+    /* transition: animation-duration 1s; */
+    animation-fill-mode: none; /* Evita estilos finais após a animação */
+}
+
+@keyframes animar {
+    0% {
+        transform: translateX(-10vh) scale(1);
+    }
+    
+    100% {
+        transform: translateY(300vh) scale(0); /* Estrelas caindo */
+    }
+}
+
+
+
+/* .bolhas span:nth-of-type(even) {
+    background: #2dc3ff;
+    box-shadow: 0 0 0 10px #2dc3ff44,
+    0 0 50px #2dc3ff,
+    0 0 100px #2dc3ff;
+} */
